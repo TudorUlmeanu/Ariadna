@@ -1,0 +1,90 @@
+/* Body styles */
+body {
+  /* font-family: 'Bradley Hand', cursive; */
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 24px;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  color: #333333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.header-title {
+  margin: 0;
+}
+
+/* Details styles */
+.header-details {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+
+.header-details p {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+/* Picture gallery styles */
+.picture-gallery {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picture-gallery img {
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 20px;
+  }
+
+  .picture-gallery img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .App-header {
+    font-size: 18px;
+  }
+
+  .header-details p {
+    font-size: 14px;
+  }
+
+  .picture-gallery img {
+    width: 150px;
+    height: 150px;
+  }
+}
